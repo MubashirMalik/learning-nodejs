@@ -19,9 +19,9 @@ class NameGenerator {
 
     addName() {
         console.log(this)
-        const name = new NameField("Max");
+        const name = new NameField(this.names[this.currentName]);
         this.currentName++
-        if (this.currentName > this.names.length) {
+        if (this.currentName >= this.names.length) {
             this.currentName = 0
         }
     }
