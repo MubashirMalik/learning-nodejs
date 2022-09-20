@@ -14,7 +14,7 @@ class NameGenerator {
         this.names = ['Max', 'Usama', 'Mubashir']
         this.currentName = 0
         // this.addName()
-        btn.addEventListener('click', this.addName);
+        btn.addEventListener('click', this.addName.bind(this));
     }
 
     addName() {
