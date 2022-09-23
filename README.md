@@ -24,6 +24,7 @@
 5. [Primitive vs Reference Types/Values](https://www.youtube.com/watch?v=9ooYYRLdg_g)
     - Primitive types are copied by value
     - `strings` are primitive types
+    - `let secondPerson = Object.assign({}, person)`
 
 ## 3. Understanding the Basics
 
@@ -53,13 +54,17 @@
 
 1.  Why Express?
     - Server logic is complex!
-    - For example: To parse an incoming request, we used,
+    - For example: To parse an incoming request, we used:
       - `req.on('data', chunk => {...});` 
       - `req.on('end',  () => {...});`
     - We want to focus on our business  logic, not on the nitty-gritty details.  So, we use a framework for heavy lifting!
 2. Alternatives 
-	- Vanilla Node.js (what we have done so far),
+    - Vanilla Node.js (what we have done so far),
 	- Adonis.js (Laravel inspired)
 	- Koa
 	- Sails.js 
 3. Middlewares
+    - Functions that can hook into the funnel through which the request goes. 
+    - `app.use()` has 5 different overloads. 
+        - optional first argument: `path`
+        - second argument: `callback`
