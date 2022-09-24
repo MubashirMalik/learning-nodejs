@@ -69,3 +69,4 @@
         - optional first argument: `path`
         - second argument: `callback`
         - `/` is the default path
+    - Use `app.get(), app.post()` for exact matching
