@@ -68,3 +68,4 @@
     - `app.use()` has 5 different overloads. 
         - optional first argument: `path`
         - second argument: `callback`
+        - `/` is the default path
