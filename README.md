@@ -70,3 +70,11 @@
         - second argument: `callback`
         - `/` is the default path
     - Use `app.get(), app.post()` for exact matching
+
+## 6. Working with Dynamic Content - Adding Templating Engines
+
+1. Sharing data across requests & users
+2. Template Engines
+    - EJS
+    - Pug (Jade)
+    - Handlebars
