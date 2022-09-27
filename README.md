@@ -81,3 +81,21 @@
 3. `res.render('view-name', {dataPassed})` is provided by express to render a template 
 4. `app.set('view engine', 'pug')` is used to register a view engine.
 5. `app.set('views', 'views')` is used to tell express where our views are to be found. `views` is the default location.
+
+## 7. The Model View Controller (MVC)
+
+1. Seperation of Concerns
+    - Models
+        - Represent data in the code
+        - Work with your data (e.g. save, fetch)
+    - Views
+        - What the user sees
+        - Decoupled from your application code
+    - Controllers
+        - Connecting your Models & your Views
+        - Contains the "in-between" logic
+        - Kind of split across middleware functions in a express like application.
+    - Routes
+        - define upon which path & which HTTP method which controller should execute.
+        
+
