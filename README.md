@@ -78,3 +78,6 @@
     - EJS
     - Pug (Jade)
     - Handlebars
+3. `res.render('view-name', {dataPassed})` is provided by express to render a template 
+4. `app.set('view engine', 'pug')` is used to register a view engine.
+5. `app.set('views', 'views')` is used to tell express where our views are to be found. `views` is the default location.
