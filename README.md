@@ -99,3 +99,16 @@
         - define upon which path & which HTTP method which controller should execute.
         
 
+## 9. Dynamic Routes - Advanced Models
+
+1. Dynamic route & specific route ordering matters!
+  
+    - ```
+        router.get('/products/:productId')
+        router.get('/products/delete')
+        ```
+    - `/products/delete` will never fire because it will be handled by `/products/:productId`
+
+    - We can extract it in controller, `const { productId } = req.params`
+2. Optional query parameters can also be passed `?edit=true&b=2` and extracted through 
+    - `const { edit, b } = req.query`
