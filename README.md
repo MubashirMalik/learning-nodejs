@@ -19,7 +19,7 @@
     - `this` is the thing which calls the code, **binding this**
     - Arrow functions solve the above problem ([Explanation](https://www.youtube.com/watch?v=Pv9flm-80vM))
     - *Could not grasp concept completely: Revisit video-014*
-3. Spreat & Rest operators
+3. Spread & Rest operators
 4. Destructing: arrays & objects
 5. [Primitive vs Reference Types/Values](https://www.youtube.com/watch?v=9ooYYRLdg_g)
     - Primitive types are copied by value
@@ -84,7 +84,7 @@
 
 ## 7. The Model View Controller (MVC)
 
-1. Seperation of Concerns
+1. Separation of Concerns
     - Models
         - Represent data in the code
         - Work with your data (e.g. save, fetch)
