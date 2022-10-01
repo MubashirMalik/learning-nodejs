@@ -112,3 +112,26 @@
     - We can extract it in controller, `const { productId } = req.params`
 2. Optional query parameters can also be passed `?edit=true&b=2` and extracted through 
     - `const { edit, b } = req.query`
+
+## 10. SQL Introduction
+
+1. SQL
+    - Strict/Strong **Data Schema**
+    - **Data Relations**
+        - 1-1
+        - 1-M
+        - M-N 
+    - Data is distributed across multiple tables     
+    - Horizontal scaling is difficult/impossible; Vertical scaling is possible
+    - Limitations for lots of (thousands) read & write queries per second
+2. NoSQL
+    - No Data Schema
+    - No (or very few) Relations
+    - Data is typically merged/nested in few collections
+    - Both horizontal and vertical scaling are possible 
+    - Great performance for mass read & write requests
+3. Horizontal Scaling
+    - Add more servers (and merge data into one database)
+
+4. Vertical Scaling
+    - Improve server capacity/hardware, but there is a LIMIT!
