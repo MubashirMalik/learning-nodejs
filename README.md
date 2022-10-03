@@ -135,3 +135,7 @@
 
 4. Vertical Scaling
     - Improve server capacity/hardware, but there is a LIMIT!
+
+## 11. Sequelize
+
+1. An Object-Relational Mapping Library
